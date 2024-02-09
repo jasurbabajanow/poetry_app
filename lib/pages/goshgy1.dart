@@ -33,12 +33,26 @@ class _Goshgy1State extends State<Goshgy1> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.white,
-            title: const Text(
-              "Şygyrlar",
-              style:
-                  TextStyle(fontFamily: 'Times New Roman', color: Colors.black),
-            )),
+          backgroundColor: Colors.white,
+          title: const Text(
+            "Şygyrlar",
+            style:
+                TextStyle(fontFamily: 'Times New Roman', color: Colors.black),
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 12.0),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.search,
+                  color: Colors.black,
+                  size: 30,
+                ),
+              ),
+            ),
+          ],
+        ),
         body: Stack(
           children: [
             Padding(
